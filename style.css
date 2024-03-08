@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Perfect DOS VGA 437';
+    src: url('Perfect DOS VGA 437.ttf') format('truetype'), url('Perfect DOS VGA 437 Win.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background-color: rgb(14, 14, 105);
+    color: yellow;
+    font-family: "Perfect DOS VGA 437";
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+h1 {
+    color: white;
+    line-height: 45px;
+}
+
+li {
+    list-style: none;
+    margin-top: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+    pointer-events: none;
+    line-height: 23px;
+}
+
+.selected {
+    color: white;
+}
+
+#mostrador {
+    color: darkgray;
+    background-color: rgb(14, 14, 105);
+    width: 100%;
+    height: 25px;
+    position: fixed;
+    bottom: 0px;
+    margin: 0;
+    padding: 0 0 35px 0;
+
+}
+
+@media only screen and (orientation: portrait) {
+    a {
+        pointer-events: visible;
+        font-size: 10px;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h1 span {
+        display: block;
+        padding-top: 20px;
+    }
+
+    li {
+        margin-top: 20px;
+    }
+
+    #mostrador {
+        display: none;
+    }
+}
+
+@media (max-width:1024px) {
+    a {
+        pointer-events: visible;
+    }
+
+    #mostrador {
+        display: none;
+    }
+}
