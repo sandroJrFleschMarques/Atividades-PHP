@@ -1,7 +1,7 @@
 <?php
 require('pratica04/classes.php');
-$circle2 = new Circulo(0);
-$circle2->desenhar();
+// $circle2 = new Circulo(0);
+// $circle2->desenhar();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@ $circle2->desenhar();
 
     </p>
     <p>
-        <img src="../images/1.png">
+        <img src="../images/41.png">
     </p>
     <?php
 
@@ -39,7 +39,7 @@ $circle2->desenhar();
 
     </p>
     <p>
-        <img src="../images/2.png">
+        <img src="../images/42.png">
     </p>
 
 
@@ -69,7 +69,7 @@ $circle2->desenhar();
 
     </p>
     <p>
-        <img src="../images/3.png">
+        <img src="../images/43.png">
     </p>
 
     <?php
