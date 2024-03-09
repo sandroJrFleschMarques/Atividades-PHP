@@ -1,7 +1,7 @@
 <?php
 require('pratica04/classes.php');
-// $circle2 = new Circulo(0);
-// $circle2->desenhar();
+$circle2 = new Circulo(0);
+$circle2->desenhar();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,6 @@ require('pratica04/classes.php');
 <body style='box-sizing:border-box'>
     <p><b>1. Implemente e teste o modelo de classes com base na seguinte
             imagem:</b>
-
     </p>
     <p>
         <img src="../images/41.png">
@@ -30,8 +29,6 @@ require('pratica04/classes.php');
     $pedido->adicionar($item0);
     $pedido->listar();
 
-
-
     ?>
     <hr>
     <p><b>2. Implemente e teste o modelo de classes com base na seguinte
@@ -42,7 +39,6 @@ require('pratica04/classes.php');
         <img src="../images/42.png">
     </p>
 
-
     <?php
     $retangulo = new Retangulo(50, 50);
     print_r($retangulo);
@@ -52,8 +48,6 @@ require('pratica04/classes.php');
     $retangulo2->redimensionar(140, 120);
     print_r($retangulo2);
     $retangulo2->desenhar();
-
-
 
     $circle = new Circulo(50);
     print_r($circle);
@@ -66,7 +60,6 @@ require('pratica04/classes.php');
     <hr>
     <p><b>3. Crie o diagrama de classe da atividade 3 da lista de atividades
             sobre Pilares POO e Composição.</b>
-
     </p>
     <p>
         <img src="../images/43.png">
