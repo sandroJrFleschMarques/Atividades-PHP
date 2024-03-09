@@ -18,7 +18,7 @@ $circle2->desenhar();
 
     </p>
     <p>
-        <img src="1.png">
+        <img src="../images/1.png">
     </p>
     <?php
 
@@ -39,7 +39,7 @@ $circle2->desenhar();
 
     </p>
     <p>
-        <img src="2.png">
+        <img src="../images/2.png">
     </p>
 
 
@@ -69,7 +69,7 @@ $circle2->desenhar();
 
     </p>
     <p>
-        <img src="3.png">
+        <img src="../images/3.png">
     </p>
 
     <?php
