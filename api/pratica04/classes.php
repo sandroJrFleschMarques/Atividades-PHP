@@ -34,9 +34,9 @@ class Pedido
 abstract class FormatoDeElemento
 {
     abstract public function desenhar();
-    abstract public function redimensionar();
+    abstract public function redimensionar($novoCompr, $novaAlt);
 }
-class Retangulo
+class Retangulo extends FormatoDeElemento
 {
     public $comprimento;
     public $altura;
@@ -55,7 +55,7 @@ class Retangulo
         $this->altura = $novaAlt;
     }
 }
-class Circulo
+class Circulo extends FormatoDeElemento
 {
     public $raio;
     public function __construct($raioP)
@@ -67,7 +67,7 @@ class Circulo
         $raio2 = $this->raio * 2;
         echo "<div style='width:{$raio2}; height:{$raio2}; border-radius:50%; background-color:red'></div><br>";
     }
-    public function redimensionar($novoRaio)
+    public function redimensionar($novoRaio, $x=0)
     {
         $this->raio = $novoRaio;
     }
