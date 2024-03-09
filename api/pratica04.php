@@ -69,7 +69,7 @@ $circle2->desenhar();
 
     </p>
     <p>
-        <img src="pratica04/3.png">
+        <img src="/pratica04/3.png">
     </p>
 
     <?php
