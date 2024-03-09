@@ -34,7 +34,6 @@ class Pedido
 abstract class FormatoDeElemento
 {
     abstract public function desenhar();
-    abstract public function redimensionar($novoCompr, $novaAlt);
 }
 class Retangulo extends FormatoDeElemento
 {
@@ -67,7 +66,7 @@ class Circulo extends FormatoDeElemento
         $raio2 = $this->raio * 2;
         echo "<div style='width:{$raio2}; height:{$raio2}; border-radius:50%; background-color:red'></div><br>";
     }
-    public function redimensionar($novoRaio, $x=0)
+    public function redimensionar($novoRaio)
     {
         $this->raio = $novoRaio;
     }
@@ -81,12 +80,12 @@ class RevendaAuto
 
     public function __construct($nomeP, $enderecoP)
     {
-        $this->nome=$nomeP;
-        $this->endereco=$enderecoP;
+        $this->nome = $nomeP;
+        $this->endereco = $enderecoP;
     }
-    public function adicionarAoEstoque($estoqueP){
+    public function adicionarAoEstoque($estoqueP)
+    {
         $this->estoque[] = $estoqueP;
-
     }
     public function listarEstoque()
     {
@@ -99,15 +98,16 @@ class RevendaAuto
         echo '</pre>';
     }
 }
-class Carro {
+class Carro
+{
     public $marca;
     public $modelo;
     public $valor;
 
     public function __construct($marcaP, $modeloP, $valorP)
     {
-        $this->marca=$marcaP;
-        $this->modelo=$modeloP;
-        $this->valor=$valorP;
+        $this->marca = $marcaP;
+        $this->modelo = $modeloP;
+        $this->valor = $valorP;
     }
 }
