@@ -18,7 +18,7 @@ array_push($_SESSION['Logado'], $senha);
 echo "<pre>";
 print_r($_SESSION['id']);
 print_r($_SESSION['Logado']);
-print_r($_SESSION)['users'];
+print_r($_SESSION['users']);
 echo "</pre>";
 
 $dados = ($_SESSION['users'][$email]);
