@@ -3,10 +3,6 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
-if (!session_id()) {
-    // Verificando se há uma sessão, caso não tenha, será criada uma.
-    session_start();
-}
 
 if (!isset($_SESSION['users'][$email])) {
     //Verificando se a lista já foi setada/criada (is set)
