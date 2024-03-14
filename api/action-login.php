@@ -13,7 +13,7 @@ array_push($_SESSION['Logado'], $email);
 array_push($_SESSION['Logado'], $senha);
 
 // var_dump($_SESSION['Logado']);
-var_dump($_SESSION['users']);
+var_dump($_SESSION[0]);
 
 $dados = ($_SESSION['users'][$email]);
 
