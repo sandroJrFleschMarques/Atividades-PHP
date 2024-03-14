@@ -14,16 +14,18 @@ $_SESSION['Logado'] = array();
 array_push($_SESSION['Logado'], $email);
 array_push($_SESSION['Logado'], $senha);
 
+
+$dados = ($_SESSION['users']);
 // var_dump($_SESSION['Logado']);
 echo "<pre>";
 print_r($_SESSION['id']);
 print_r($_SESSION['Logado']);
 print_r($_SESSION['users']);
 print_r($email);
-print_r($_SESSION['users'][$email]);
+print_r($dados[$email]);
 echo "</pre>";
 
-$dados = ($_SESSION['users'][$email]);
+
 
 
 $statusquo = false;
