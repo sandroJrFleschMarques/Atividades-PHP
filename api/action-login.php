@@ -21,8 +21,10 @@ print_r($_SESSION);
 echo "</pre>";
 
 $dados = ($_SESSION['users'][$_SESSION['Logado'][0]]);
-echo $dados;
-echo"acima";
+echo "<pre>";
+print_r($dados);
+echo "</pre>";;
+echo"<br>acima<br>";
 
 $statusquo = false;
 foreach ($dados as $key => $value) {
