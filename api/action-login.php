@@ -22,7 +22,7 @@ print_r($_SESSION['id']);
 print_r($_SESSION['Logado']);
 print_r($_SESSION['users']);
 print_r($email);
-print_r($dados[$email]);
+print_r($dados);
 echo "</pre>";
 
 
