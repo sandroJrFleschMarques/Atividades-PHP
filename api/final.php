@@ -12,7 +12,7 @@
 <body>
     <h1>Bem vindo ao GrowTwitter!</h1><br>
     <h2>CADASTRAR USUARIO</h2>
-    <form action="final/action-users.php" method="post">
+    <form action="./final/action-users.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="name" required>
         <label for="email">Email:</label>
