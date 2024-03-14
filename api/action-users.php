@@ -8,12 +8,6 @@ if (!session_id()) {
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
-if (!isset($_SESSION['users'][$email])) {
-    //Verificando se a lista já foi setada/criada (is set)
-    var_dump('Criando lista...');
-    $_SESSION['users'][$email] = array();
-}
-
 
 $usuario = new Usuario($nome, $email, $senha);
 array_push($_SESSION['users'][$email], $usuario);
