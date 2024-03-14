@@ -1,5 +1,5 @@
 <?php
-require('./atividade-final/usuario.php');
+require('atividade-final/usuario.php');
 
 $email = $_SESSION['Logado'][0];
 $senha = $_SESSION['Logado'][1];

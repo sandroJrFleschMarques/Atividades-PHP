@@ -1,5 +1,5 @@
 <?php
-require('./atividade-final/usuario.php');
+require('atividade-final/usuario.php');
 if (!session_id()) {
     // Verificando se há uma sessão, caso não tenha, será criada uma.
     session_start();

@@ -1,5 +1,5 @@
 <?php
-require('./atividade-final/usuario.php');
+require('atividade-final/usuario.php');
 
 session_start();
 

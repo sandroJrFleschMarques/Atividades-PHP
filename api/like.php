@@ -1,5 +1,5 @@
 <?php
-require('./atividade-final/usuario.php');
+require('atividade-final/usuario.php');
 
 $id = $_GET['id'];
 $logado = $_GET['logado'];
