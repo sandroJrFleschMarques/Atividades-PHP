@@ -1,6 +1,9 @@
 <?php
 require('atividade-final/usuario.php');
-
+if (!session_id()) {
+    // Verificando se há uma sessão, caso não tenha, será criada uma.
+    session_start();
+}
 $email = $_SESSION['Logado'][0];
 $senha = $_SESSION['Logado'][1];
 echo "<a href= atividade-final.php>Voltar para Meus Tweets</a><br>";

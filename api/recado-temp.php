@@ -1,7 +1,10 @@
 <?php
 require('atividade-final/usuario.php');
 
-session_start();
+if (!session_id()) {
+    // Verificando se há uma sessão, caso não tenha, será criada uma.
+    session_start();
+}
 
 $title = $_POST['title'];
 $content = $_POST['content'];

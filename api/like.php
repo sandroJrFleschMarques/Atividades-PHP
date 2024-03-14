@@ -1,6 +1,9 @@
 <?php
 require('atividade-final/usuario.php');
-
+if (!session_id()) {
+    // Verificando se há uma sessão, caso não tenha, será criada uma.
+    session_start();
+}
 $id = $_GET['id'];
 $logado = $_GET['logado'];
 $target = $_GET['target'];
