@@ -1,5 +1,5 @@
 <?php
-require('atividade-final/util.php');
+
 require('atividade-final/usuario.php');
 
 
