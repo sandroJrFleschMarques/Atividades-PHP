@@ -11,7 +11,7 @@
 
 <body>
     <h1>CADASTRAR USUARIO</h1>
-    <form action="./atividade-final/util.php" method="post">
+    <form action="action-users.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="name" required>
         <label for="email">Email:</label>
