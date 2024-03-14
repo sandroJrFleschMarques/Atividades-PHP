@@ -19,6 +19,8 @@ echo "<pre>";
 print_r($_SESSION['id']);
 print_r($_SESSION['Logado']);
 print_r($_SESSION['users']);
+print_r($email);
+print_r($_SESSION['users'][$email]);
 echo "</pre>";
 
 $dados = ($_SESSION['users'][$email]);
