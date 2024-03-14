@@ -2,7 +2,6 @@
 require('atividade-final/usuario.php');
 
 
-
 if (!session_id()) {
     // Verificando se há uma sessão, caso não tenha, será criada uma.
     session_start();
@@ -17,14 +16,13 @@ array_push($_SESSION['Logado'], $senha);
 
 // var_dump($_SESSION['Logado']);
 echo "<pre>";
-print_r($_SESSION);
+print_r($_SESSION['id']);
+print_r($_SESSION['Logado']);
+print_r($_SESSION)['users'];
 echo "</pre>";
 
-$dados = ($_SESSION['users'][$_SESSION['Logado'][0]]);
-echo "<pre>";
-print_r($dados);
-echo "</pre>";;
-echo"<br>acima<br>";
+$dados = ($_SESSION['users'][$email]);
+
 
 $statusquo = false;
 foreach ($dados as $key => $value) {
