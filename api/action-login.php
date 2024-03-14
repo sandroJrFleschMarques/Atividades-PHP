@@ -1,5 +1,4 @@
 <?php
-
 require('atividade-final/usuario.php');
 
 
@@ -21,7 +20,7 @@ echo "<pre>";
 print_r($_SESSION);
 echo "</pre>";
 
-$dados = ($_SESSION['users'][$email]);
+$dados = ($_SESSION['users'][$_SESSION['Logado'][0]]);
 
 
 $statusquo = false;
