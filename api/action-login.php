@@ -12,8 +12,8 @@ $_SESSION['Logado'] = array();
 array_push($_SESSION['Logado'], $email);
 array_push($_SESSION['Logado'], $senha);
 
-var_dump($_SESSION['Logado']);
-var_dump($_SESSION);
+// var_dump($_SESSION['Logado']);
+var_dump($_SESSION['users']);
 
 $dados = ($_SESSION['users'][$email]);
 
